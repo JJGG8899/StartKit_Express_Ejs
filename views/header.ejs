@@ -1,0 +1,17 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">NodeAuth</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class= <%= title == "Members" ? "active" :"" %>><a href="/"> Members </a></li>
+            <li class= <%= title == "Register" ? "active" :"" %>><a href="/users/register">Register</a></li>
+            <li class= <%= title == "Login" ? "active" :"" %>><a href="/users/login">Login</a></li>
+          </ul>
+          <ul class='nav navbar-nav pull-right'>
+            <li><a href="/users/logout">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>

@@ -1,0 +1,37 @@
+<% layout('layout') -%>
+<h2 class="page-header"> Register </h2>
+<p>
+  Please register
+</p>
+
+<form action="/users/register" method="post",
+  enctype="multipart/form-data">
+  <div class="form-group">
+    <label> User Name: </label>
+    <input type="text" class="form-control"
+      name="userName" placeholder="Your User Name">
+  </div>
+  <div class="form-group">
+    <label> Email: </label>
+    <input type="email" class="form-control"
+      name="email" placeholder="Your Email">
+  </div>
+  <div class="form-group">
+    <label> Password: </label>
+    <input type="password" class="form-control"
+      name = "password" placeholder="Your Password">
+  </div>
+  <div class="form-group">
+    <label> Confirm Password: </label>
+    <input type="password" class="form-control"
+      name="password2" placeholder="Confirm Password">
+  </div>
+  <div class="form-group">
+    <label> Profile Image: </label>
+    <input type="file" class="form-control"
+      name="profileImage" multiple>
+  </div>
+  <button type="submit" name="submit"
+      class='btn btn-success'> Submit
+  </button>
+</form>
